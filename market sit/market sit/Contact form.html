@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <style>
+/* ===== GLOBAL AI UI STYLING ===== */
+:root {
+  --bg: #0a0f1f;
+  --card: #111827;
+  --text: #e2e8f0;
+  --accent: #6366f1;     /* Indigo */
+  --accent-2: #22d3ee;   /* Cyan */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #1e1b4b, #0a0f1f 60%);
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Page container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Heading */
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title span {
+  color: #22d3ee;
+}
+
+/* Description text */
+.container p {
+  max-width: 750px;
+  margin: 10px auto 30px;
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+/* ===== AI CONTACT FORM ===== */
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-grid form {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  border-radius: 18px;
+  background: linear-gradient(160deg, #0f172a, #1e293b);
+  box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(99, 102, 241, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+/* Inputs & textarea */
+.contact-grid input,
+.contact-grid textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-grid input:focus,
+.contact-grid textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+  outline: none;
+}
+
+/* Submit button */
+.contact-grid button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  border-radius: 10px;
+  border: none;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-grid button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 20px rgba(99, 102, 241, 0.5);
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+
+        <h2 class="section-title">Let's Work <span>Together</span></h2>
+
+        <p>Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+           I'm always excited about new challenges and opportunities.</p>
+
+        <div class="contact-grid">
+            <form>
+                <div class="contact-form">
+                    <input type="text" name="name" placeholder="Full Name">
+                </div>
+
+                <div class="contact-form">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="contact-form">
+                    <textarea name="message" rows="6" placeholder="Message"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
